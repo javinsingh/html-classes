@@ -1,0 +1,57 @@
+body {
+    font-family:'Arial', sans-serif;
+    background-color: azure;
+    color:lavender
+}
+
+h1 {
+    color:black
+}
+
+a {
+    color:hotpink;
+    text-decoration: solid;
+}
+a:hover {
+    color:cornflowerblue;
+}
+
+ul > li {
+    font-weight: bold;
+}
+
+h1 + p {
+    background-color: azure;
+    font-size: 1cm;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 5cap;
+    padding: 10px;
+    border-radius: 1px;
+}
+
+ul li:hover {
+    color:bisque;
+}
+
+ul li:nth-child {
+    background-color:black;
+}
+
+p:not(:first-of-type) {
+    text-decoration: dotted;
+}
+
+ul li::before{
+    content:"😎";
+}
+a::after {
+    content:"🎁";
+}
+p::first-letter {
+    font-size: 200%;
+    color:aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
