@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>positions
+        </title>
+        <style>
+            div {
+                right: 200px;
+                border: 10px solid blue;
+            }
+            div.absolute {
+                position:absolute;
+                right: 200px;
+                border: 10px solid blanchedalmond;
+            }
+            div.relative {
+                position:relative;
+                left: 1000px;
+                border: 12px solid black;
+            }
+            div.sticky {
+                position: sticky;
+                left: 100px;
+                border: 15px solid red;
+            }
+            div.static {
+                position: static;
+                width: 50px;
+                top: 100px;
+                left: 50px;
+                border: 1px solid green;
+            }
+            div.fixed {
+                position: fixed;
+                width: 100px;
+                top: 100px;
+                left: 50px;
+                border: 3px solid darkblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Positioning</h2><br>
+
+        <div>
+            This is a div with no position
+        </div>
+        <div class="static">
+            this div has a static position
+        </div>
+        <div class="fixed">
+            this div has a fixed position
+        </div>
+        <div class="sticky">
+            this div has a sticky position
+        </div>
+        <div class="relative">
+            this div has a relative position
+        </div>
+        <div class="absolute">
+            this div has an absolute position
+        </div>
+    </body>
+</html>
