@@ -1,0 +1,16 @@
+<DOCTYPE html>
+<html>
+    <body>
+        <h2>Here is the groceries list:</h2>
+        <p id="demo"></p>
+        <script>
+            var list = ["bread", "croissants", "bananas", "apples", "milk"];
+            var text = " ";
+            var x;
+            for (x = 0; x < list.length; x++) {
+                text += list[x] + "<br>";
+            }
+            document.getElementById("demo").innerHTML = text;
+        </script>
+    </body>
+</html>
