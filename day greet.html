@@ -1,0 +1,32 @@
+<DOCTYPE html>
+<html>
+    <body>
+        <h2>click the button to see which greet to use at your time.</h2>
+        <button onclick="showgreet()">Click me!</button>
+        <p id="hour"></p>
+        <p id="greet"></p>
+        <script>
+            function showgreet() {
+                var greeting;
+                var time = new Date().getHours();
+
+                if (time < 12) {
+                    document.getElementById("greet").innerHTML = "Good morning!";
+                    document.getElementById("hour").innerHTML = time;
+                }
+                else if (time < 17) {
+                    document.getElementById("greet").innerHTML = "Good afternoon!";
+                    document.getElementById("hour").innerHTML = time;
+                }
+                else if (time < 20) {
+                    document.getElementById("greet").innerHTML = "Good evening!";
+                    document.getElementById("hour").innerHTML = time;
+                }
+                else {
+                    document.getElementById("greet").innerHTML = "Good night!";
+                    document.getElementById("hour").innerHTML = time;
+                }
+            }
+        </script>
+    </body>
+</html>
