@@ -1,0 +1,23 @@
+<DOCTYPE html>
+<html>
+    <body>
+        <h1>Acending and Decending</h1>
+        <button onclick="accending()">accending</button>
+        <button onclick="decending()">decending</button>
+        <p id="result"></p>
+        <script>
+            var points = [3, 6, 29, 19, 34, 4];
+            document.getElementById("result").innerHTML = points;
+
+            function accending() {
+                points.sort(function (a, b) {return a - b});
+                document.getElementById("result").innerHTML = points;
+            }
+
+            function decending() {
+                points.sort(function(a, b){return b - a});
+                document.getElementById("result").innerHTML = points;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<DOCTYPE html>
+<html>
+    <body>
+        <h1>eval in JS</h1>
+        <p id="result"></p>
+        <script>
+            var x = 10;
+            var y = 49;
+            var a = eval("x * y");
+            var b = eval("2 * 2");
+            var c = eval("y - x");
+
+            var res = a + b + c;
+            document.getElementById('result').innerHTML = res;
+        </script>
+    </body>
+</html>
